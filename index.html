@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Calculator</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <button class="btn btn-clear" onclick="handleClear()">C</button>
+                <button class="btn btn-operator" onclick="handleClick('(')">(</button>
+                <button class="btn btn-operator" onclick="handleClick(')')">)</button>
+                <button class="btn btn-operator" onclick="handleClick('/')">÷</button>
+
+                <button class="btn btn-number" onclick="handleClick('7')">7</button>
+                <button class="btn btn-number" onclick="handleClick('8')">8</button>
+                <button class="btn btn-number" onclick="handleClick('9')">9</button>
+                <button class="btn btn-operator" onclick="handleClick('*')">×</button>
+
+                <button class="btn btn-number" onclick="handleClick('4')">4</button>
+                <button class="btn btn-number" onclick="handleClick('5')">5</button>
+                <button class="btn btn-number" onclick="handleClick('6')">6</button>
+                <button class="btn btn-operator" onclick="handleClick('-')">-</button>
+
+                <button class="btn btn-number" onclick="handleClick('1')">1</button>
+                <button class="btn btn-number" onclick="handleClick('2')">2</button>
+                <button class="btn btn-number" onclick="handleClick('3')">3</button>
+                <button class="btn btn-operator" onclick="handleClick('+')">+</button>
+
+                <button class="btn btn-number btn-zero" onclick="handleClick('0')">0</button>
+                <button class="btn btn-number" onclick="handleClick('.')">.</button>
+                <button class="btn btn-action" onclick="handleCalculate()">=</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Calculator. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/abdulsami-1/" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
